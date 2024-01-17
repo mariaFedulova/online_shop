@@ -1,0 +1,11 @@
+.page {
+    background-color: $heading_color;
+    min-height: 148px;
+
+    &__heading {
+        text-transform: uppercase;
+        @include font(24px, 29px);
+        color: $pink_color;
+        padding: 59px 0 0 0;
+    }
+}

@@ -1,0 +1,75 @@
+.subscribe {
+    background-image: url(../images/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        min-height: 448px;
+        justify-content: space-between;
+        align-items: center;
+
+        .subscribe__info {
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subscribe__info-text {
+            @include font(20px, 24px);
+            font-style: italic;
+            text-align: center;
+            margin: 30px 0 0;
+        }
+
+        .subscribe__enter {
+            width: 557px;
+        }
+
+        .subscribe__enter-heading {
+            @include font(20px, 40px, 700);
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .subscribe__enter-text {
+            @include font(18px, 30px);
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 32px;
+        }
+
+        .subscribe__enter-form {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .subscribe__input {
+            background: $input_color;
+            border: none;
+            border-radius: 20px 0 0 20px;
+            padding: 15px 64px 15px 22px;
+
+            &:hover,
+            &:focus {
+                opacity: 0.5;
+            }
+        }
+
+        .subscribe__button {
+            color: $white_color;
+            background-color: $pink_color;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            padding: 10px;
+
+            &:hover,
+            &:focus {
+                background-color: $hover_button_color;
+                cursor: pointer;
+            }
+        }
+    }
+}

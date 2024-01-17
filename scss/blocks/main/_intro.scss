@@ -1,0 +1,35 @@
+.intro {
+    display: flex;
+    background-color: $intro_color;
+    margin: 0 0 63px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 91px;
+    }
+
+    &__title {
+        @include font(48px, 58px, 900);
+        text-transform: uppercase;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 100%;
+            background-color: $pink_color;
+            left: -32px
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        @include font(32px, 38px, 700);
+
+        &-pink {
+            color: $pink_color;
+        }
+    }
+}

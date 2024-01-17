@@ -1,0 +1,105 @@
+.header {
+    background-color: $black_color;
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        min-height: 75px;
+        justify-content: space-between;
+
+
+    }
+
+    &__logo {
+        margin: 0 34px 0 0;
+        text-decoration: none;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 34px 0 0;
+    }
+
+    &__person-link {
+        margin: 0 34px 0 0;
+        text-decoration: none;
+    }
+
+    &__person-link:hover,
+    &__cart-link:hover {
+        opacity: 0.5;
+    }
+
+    &__button:hover,
+    &__loupe:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    &__nav {
+        display: none;
+        position: absolute;
+        min-height: 765px;
+        width: 232px;
+        background-color: $white_color;
+        right: 0;
+        box-shadow: -1px 3px 10px $gray_color;
+
+
+    }
+
+    &__nav-heading,
+    &__item-heading {
+        text-transform: uppercase;
+        font-family: Lato;
+        @include font(14px, 17px);
+    }
+
+    &__nav-heading {
+        font-weight: 700;
+        padding: 37px 0 24px 34px;
+    }
+
+    &__item-heading {
+        font-weight: 400;
+        color: $pink_color;
+        padding: 0 0 0 34px;
+    }
+
+    &__item-links {
+        margin: 12px 0 20px 54px;
+    }
+
+    .li-margin {
+        margin: 11px 0 0 0;
+    }
+
+    &__category {
+        text-decoration: none;
+        color: $category_color;
+        @include font(14px, 17px);
+    }
+
+    .li:hover {
+        opacity: 0.5;
+    }
+
+    .nav__close-button {
+        position: absolute;
+        top: 16px;
+        right: 17px;
+        border: none;
+        background-color: $white_color;
+    }
+
+    .nav__close-button:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}
+
+.display-block {
+    display: block;
+}

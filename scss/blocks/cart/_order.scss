@@ -1,0 +1,93 @@
+.order {
+    width: 360px;
+
+    &__legend {
+        @include font(16px, 19px, 300);
+        text-transform: uppercase;
+        margin: 0 0 20px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border: 1px solid $inputs_border;
+        height: 45px;
+        padding: 13px 0 16px 17px;
+        box-sizing: border-box;
+        margin: 0 0 20px;
+
+        &[placeholder] {
+            -webkit-text-fill-color: $placeholder_color;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+        }
+    }
+
+    &__quote-button {
+        text-transform: uppercase;
+        color: $inputs_border;
+        background: none;
+        border: 1px solid $inputs_border;
+        padding: 12px 14px;
+        @include font(11px, 13px, 300);
+
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    &__price {
+        margin: 57px 0 0 0;
+        padding: 39px 43px 42px;
+        background-color: $cart_bkg_color;
+    }
+
+    &__sub {
+        text-align: right;
+        text-transform: uppercase;
+        color: $cart_price_color;
+        margin: 0 0 12px;
+        @include font(11px, 13px);
+
+        &-price {
+            margin: 0 0 0 20px;
+        }
+    }
+
+    &__grand {
+        text-align: right;
+        text-transform: uppercase;
+        margin: 0 0 20px;
+        @include font(16px, 19px, 300);
+
+        &-price {
+            color: $pink_color;
+            font-weight: 700;
+            margin: 0 0 0 20px;
+        }
+    }
+
+    &__hr {
+        border: 1px solid $input_color;
+        margin: 0 0 17px;
+    }
+
+    &__check-button {
+        padding: 16px 42px;
+        width: 100%;
+        background-color: $pink_color;
+        border: none;
+        color: $white_color;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $hover_button_color;
+        }
+    }
+}

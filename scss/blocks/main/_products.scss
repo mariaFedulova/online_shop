@@ -1,0 +1,114 @@
+.products {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        @include font(30px, 36px);
+        text-align: center;
+    }
+
+    &__text {
+        @include font(14px, 17px);
+        text-align: center;
+        color: $gray_color;
+        margin: 6px 0 48px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 0 18px;
+    }
+
+    &__card {
+        width: 360px;
+        background-color: $gray_card_color;
+        box-sizing: border-box;
+        margin: 0 0 30px;
+
+        .products__overlay {
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 100%;
+                min-height: 420px;
+                background: rgba(58, 56, 56, 0.86);
+                display: none;
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        .products__button {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: none;
+            border: 1px solid $white_color;
+            box-sizing: border-box;
+            padding: 14px 16px 12px 60px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .products__button-span {
+            font-family: Lato;
+            color: $white_color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+
+        .cart-img {
+            position: absolute;
+            top: 50%;
+            right: 95px;
+            transform: translate(-50%, -50%)
+        }
+
+        .products__card-wrapper {
+            padding: 25px 28px 20px 18px;
+        }
+
+        .products__card-header {
+            @include font(13px, 16px);
+            text-transform: uppercase;
+        }
+
+        .products__card-text {
+            @include font(14px, 17px, 300);
+            color: $gray_card_text_color;
+            margin: 13px 0 18px;
+        }
+
+        .products__card-price {
+            @include font(16px, 19px);
+            color: $pink_color;
+        }
+    }
+
+    &__card:hover .products__overlay:before,
+    &__card:hover .products__button {
+        display: block;
+    }
+
+    &__link {
+        text-decoration: none;
+        align-self: center;
+        border: 1px solid #FF6A6A;
+        color: $pinr_button_text_color;
+        padding: 15px 39px;
+        margin: 0 0 95px;
+
+        &:hover {
+            background-color: $pink_button_color;
+            color: $white_color;
+        }
+    }
+}

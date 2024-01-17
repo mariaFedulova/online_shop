@@ -1,0 +1,49 @@
+.copy {
+    background-color: $black_color;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        min-height: 79px;
+        align-items: center;
+    }
+
+    &__text {
+        color: $white_color;
+        @include font(16px, 19px);
+    }
+
+    &__links {
+        display: flex;
+
+        .copy__link-inst,
+        .copy__link-pint,
+        .copy__link-twit,
+        .copy__link-facebook {
+            padding: 8px;
+            background-color: $white_color;
+            width: 32px;
+            height: 32px;
+            box-sizing: border-box;
+        }
+
+        .copy__link-facebook {
+            padding: 8px 10px 8px 11px;
+        }
+
+        .copy__link-margin {
+            margin: 0 7px 0 0;
+            text-decoration: none;
+        }
+
+        .copy-link-hover:hover,
+        .copy-link-hover:focus {
+            background-color: $pink_color;
+        }
+
+        .copy-link-hover:hover svg,
+        .copy-link-hover:focus svg {
+            fill: $white_color;
+        }
+    }
+}
