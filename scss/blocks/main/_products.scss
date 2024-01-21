@@ -12,6 +12,14 @@
         text-align: center;
         color: $gray_color;
         margin: 6px 0 48px;
+
+        @include tablet {
+            margin: 3px 0 74px;
+        }
+
+        @include mobile {
+            margin-bottom: 64px;
+        }
     }
 
     &__list {
@@ -19,10 +27,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 0 18px;
+
+        @include tablet {
+            margin: 0;
+        }
+
+        @include mobile {
+            margin: 0 0 24px;
+        }
     }
 
     &__card {
-        width: 360px;
+        width: 32%;
         background-color: $gray_card_color;
         box-sizing: border-box;
         margin: 0 0 30px;
@@ -72,6 +88,10 @@
             transform: translate(-50%, -50%)
         }
 
+        .products__img {
+            width: 100%;
+        }
+
         .products__card-wrapper {
             padding: 25px 28px 20px 18px;
         }
@@ -91,6 +111,15 @@
             @include font(16px, 19px);
             color: $pink_color;
         }
+
+        @include tablet {
+            width: 49%;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin: 0 0 16px;
+        }
     }
 
     &__card:hover .products__overlay:before,
@@ -109,6 +138,14 @@
         &:hover {
             background-color: $pink_button_color;
             color: $white_color;
+        }
+
+        @include tablet {
+            margin: 0 0 64px;
+        }
+
+        @include mobile {
+            margin: 0 0 96px;
         }
     }
 }

@@ -14,6 +14,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include mobile {
+                width: 96%;
+            }
         }
 
         .subscribe__info-text {
@@ -21,10 +25,18 @@
             font-style: italic;
             text-align: center;
             margin: 30px 0 0;
+
+            @include mobile {
+                @include font(18px, 22px, $font-style: italic);
+            }
         }
 
         .subscribe__enter {
             width: 557px;
+
+            @include mobile {
+                max-width: 100%;
+            }
         }
 
         .subscribe__enter-heading {
@@ -38,12 +50,20 @@
             text-align: center;
             text-transform: uppercase;
             margin: 0 0 32px;
+
+            @include mobile {
+                @include font(14px, 21px);
+                margin: 0 0 22px;
+            }
         }
 
         .subscribe__enter-form {
             display: flex;
             justify-content: center;
 
+            @include mobile {
+                width: 100%;
+            }
         }
 
         .subscribe__input {
@@ -55,6 +75,10 @@
             &:hover,
             &:focus {
                 opacity: 0.5;
+            }
+
+            @include mobile {
+                width: 72%;
             }
         }
 
@@ -70,6 +94,16 @@
                 background-color: $hover_button_color;
                 cursor: pointer;
             }
+        }
+
+        @include tablet {
+            flex-direction: column;
+            padding: 64px 0 140px;
+            height: 410px;
+        }
+
+        @include mobile {
+            padding-bottom: 104px;
         }
     }
 }

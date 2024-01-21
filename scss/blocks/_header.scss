@@ -7,8 +7,6 @@
         align-items: center;
         min-height: 75px;
         justify-content: space-between;
-
-
     }
 
     &__logo {
@@ -20,11 +18,25 @@
         background-color: transparent;
         border: none;
         margin: 0 34px 0 0;
+
+        @include mobile {
+            margin: 0;
+        }
     }
 
     &__person-link {
         margin: 0 34px 0 0;
         text-decoration: none;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__cart-link {
+        @include mobile {
+            display: none;
+        }
     }
 
     &__person-link:hover,
@@ -46,8 +58,6 @@
         background-color: $white_color;
         right: 0;
         box-shadow: -1px 3px 10px $gray_color;
-
-
     }
 
     &__nav-heading,
@@ -97,6 +107,14 @@
     .nav__close-button:hover {
         opacity: 0.5;
         cursor: pointer;
+    }
+
+    @include tablet {
+        padding: 0 16px;
+    }
+
+    @include mobile {
+        padding: 0;
     }
 }
 

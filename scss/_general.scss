@@ -4,8 +4,16 @@ body {
 }
 
 .container {
-    width: 1138px;
+    width: 72%;
     margin: 0 auto;
+
+    @include tablet {
+        width: 96%;
+    }
+
+    @include mobile {
+        width: 92%;
+    }
 }
 
 .fill-white {
