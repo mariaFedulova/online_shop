@@ -27,6 +27,28 @@
                 @include font(14px, 17px, 300);
                 text-align: center;
             }
+
+            @include tablet {
+                width: 47%;
+                margin: 0 0 48px;
+            }
+
+            @include mobile {
+                width: 92%;
+            }
         }
+
+        @include tablet {
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+
+    @include tablet {
+        padding: 48px 0 16px;
+    }
+
+    @include mobile {
+        padding-bottom: 33px;
     }
 }

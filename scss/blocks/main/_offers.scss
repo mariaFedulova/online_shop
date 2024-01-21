@@ -2,14 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .offers__item {
     color: white;
     text-transform: uppercase;
-    width: 360px;
+    width: 32%;
     min-height: 260px;
     background-color: $offers_color;
+    background-size: cover;
     margin: 0 0 30px;
     flex-direction: column;
     @include flex-center();
@@ -26,11 +31,32 @@
         background-image: url(../images/sales_sector/kids.jpg);
     }
 
+    @include tablet {
+        min-height: 168px;
+        margin: 0 0 20px;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 247px;
+        margin: 0 0 32px;
+    }
+
     &--accesories {
         background-image: url(../images/sales_sector/accesories.jpg);
         width: 100%;
         min-height: 180px;
         margin: 0 0 96px;
+
+        @include tablet {
+            margin: 0 0 155px;
+            min-height: 116px;
+        }
+
+        @include mobile {
+            min-height: 111px;
+            margin: 0 0 65px;
+        }
     }
 }
 
@@ -41,4 +67,5 @@
 .offers__text {
     @include font(24px, 29px, 700);
     color: $pink_color;
+    text-align: center;
 }
