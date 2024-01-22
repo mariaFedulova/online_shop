@@ -2,10 +2,23 @@
     display: flex;
     justify-content: space-between;
     padding: 96px 0 0 0;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        padding: 39px 0 0 0;
+    }
 }
 
 .cart {
-    max-width: 652px;
+    max-width: 57%;
+
+    &__img {
+        width: 40%;
+        height: auto;
+    }
 
     &__item {
         width: 100%;
@@ -21,6 +34,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include mobile {
+                padding: 13px 0 38px 31px;
+            }
         }
 
         &-name {
@@ -29,11 +46,20 @@
             min-height: 58px;
             @include font(24px, 29px);
             text-transform: uppercase;
+
+            @include mobile {
+                @include font(16px, 19px);
+                margin: 0 0 15px;
+            }
         }
 
         &-property {
             color: $cart_color;
-            @include font(20px, 26px)
+            @include font(20px, 26px);
+
+            @include mobile {
+                @include font(14px, 16px);
+            }
         }
 
         &-value {
@@ -64,6 +90,17 @@
                 opacity: 0.5;
                 cursor: pointer;
             }
+
+            @include mobile {
+                width: 10px;
+                height: 11px;
+                top: 17px;
+                right: 12px;
+            }
+        }
+
+        @include mobile {
+            max-height: 178px;
         }
     }
 
@@ -71,6 +108,16 @@
         display: flex;
         justify-content: space-between;
         margin: 72px 0 128px;
+
+        @include tablet {
+            margin: 72px auto 128px;
+            width: 69%;
+        }
+
+        @include mobile {
+            margin: 30px 0 48px;
+            width: 100%;
+        }
     }
 
     &__button {
@@ -89,5 +136,14 @@
             text-decoration: none;
             color: $black_color;
         }
+
+        @include mobile {
+            @include font(12px, 14px, 300);
+            padding: 9px 18px;
+        }
+    }
+
+    @include tablet {
+        max-width: 100%;
     }
 }
