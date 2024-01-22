@@ -1,6 +1,27 @@
 .order {
     width: 360px;
 
+    &__form {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__fieldset {
+        @include tablet {
+            width: 49%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
     &__legend {
         @include font(16px, 19px, 300);
         text-transform: uppercase;
@@ -45,6 +66,14 @@
         margin: 57px 0 0 0;
         padding: 39px 43px 42px;
         background-color: $cart_bkg_color;
+
+        @include tablet {
+            margin: 20px 0 147px;
+        }
+
+        @include mobile {
+            margin: 48px 0 96px;
+        }
     }
 
     &__sub {
@@ -89,5 +118,9 @@
             cursor: pointer;
             background-color: $hover_button_color;
         }
+    }
+
+    @include tablet {
+        width: 100%;
     }
 }

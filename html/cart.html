@@ -153,13 +153,15 @@
             <section class="order">
                 <h2 class="visually-hidden">Order form</h2>
                 <form class="order__form" action="#" method="POST">
-                    <fieldset>
-                        <legend class="order__legend">shipping adress</legend>
-                        <input class="order__input" type="text" placeholder="Bangladesh" name="country">
-                        <input class="order__input" type="text" placeholder="State" name="state">
-                        <input class="order__input" type="text" placeholder="Postcode / Zip" name="postcode">
-                    </fieldset>
-                    <button class="order__quote-button" type="button">get a quote</button>
+                    <div class="order__fieldset">
+                        <fieldset>
+                            <legend class="order__legend">shipping adress</legend>
+                            <input class="order__input" type="text" placeholder="Bangladesh" name="country">
+                            <input class="order__input" type="text" placeholder="State" name="state">
+                            <input class="order__input" type="text" placeholder="Postcode / Zip" name="postcode">
+                        </fieldset>
+                        <button class="order__quote-button" type="button">get a quote</button>
+                    </div>
                     <div class="order__price">
                         <p class="order__sub">sub total <span class="order__sub-price">$900</span></p>
                         <p class="order__grand">grand total <span class="order__grand-price">$900</span></p>
