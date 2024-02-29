@@ -1,0 +1,175 @@
+.product-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page__path {
+    text-transform: uppercase;
+    @include font(14px, 17px, 300);
+    color: $cart_color;
+    margin: 60px 0 0 0;
+
+    &--rose {
+        @include font(14px, 17px, 700);
+        color: $pink_color;
+    }
+}
+
+.arrow-prev {
+    width: 47px;
+    height: 47px;
+    background-color: $cart_border_color;
+    background-image: none;
+
+    &-svg {
+        margin: 10px 0 0 0;
+        fill: $black_color;
+    }
+}
+
+.product {
+    margin: 0 0 100px;
+
+    &__carusel {
+        margin-bottom: -50px;
+        border: 1px solid $cart_border_color;
+    }
+
+    &-button {
+        opacity: 1;
+        justify-content: flex-start;
+
+        &--next {
+            justify-content: flex-end;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:hover .arrow-prev .arrow-prev-svg {
+            fill: $pink_color;
+        }
+    }
+
+    &__info {
+        width: 71%;
+        min-height: 601px;
+        padding: 50px 0;
+        box-sizing: border-box;
+        margin: 0 auto;
+        background-color: $white;
+        position: relative;
+        border: 1px solid $cart_border_color;
+
+        &-container {
+            width: 56%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-cat {
+            text-align: center;
+            text-transform: uppercase;
+            @include font(14px, 17px, 400);
+            color: $pink_color;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__hr-rose {
+        border: 2px solid $pink_color;
+        background-color: $pink_color;
+        width: 63px;
+        margin: 0 auto;
+        opacity: 1;
+    }
+
+    &__name {
+        @include font(18px, 22px, 400);
+        text-align: center;
+        text-transform: uppercase;
+        color: $gray_card_text_color;
+        margin: 10px 0 40px 0;
+    }
+
+    &__desc {
+        text-align: center;
+        @include font(14px, 17px, 400);
+        color: $gray_card_text_color;
+        margin: 0 0 25px;
+    }
+
+    &__price {
+        @include font(24px, 29px, 400);
+        text-align: center;
+        color: $pink_color;
+        margin: 0 0 50px;
+    }
+
+    &__hr {
+        border: 1px solid $category_color;
+        background-color: $category_color;
+        margin: 0 0 40px;
+    }
+
+    &__options {
+        width: 373px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 40px;
+
+        &-btn {
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            @include font(14px, 17px, 400);
+            color: $gray_card_text_color;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 5px;
+                background-image: url(../images/product/dropdown.svg);
+                right: -10px;
+                top: 8px;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__add-btn {
+        border: 1px solid $pink_color;
+        background: none;
+        padding: 15px 20px;
+        align-self: center;
+
+        &:hover {
+            background-color: $hover_button_color;
+        }
+
+        &:hover .product__cart-img {
+            fill: $white;
+        }
+
+        &:hover .product__cart-span {
+            color: $white;
+        }
+    }
+
+    &__cart-img {
+        fill: $pink_color;
+        margin: 0 10px 0 0;
+    }
+
+    &__cart-span {
+        @include font(16px, 19px, 400);
+        color: $pink_color;
+    }
+}
