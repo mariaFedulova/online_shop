@@ -1,0 +1,13 @@
+.similar {
+    width: 72%;
+    margin: 0 auto 100px;
+
+    &__card {
+        padding: 0;
+        margin: 0 25px 0 0;
+
+        &--last {
+            margin: 0;
+        }
+    }
+}
