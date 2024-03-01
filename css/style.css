@@ -13688,6 +13688,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 376px) {
+  .product-flex {
+    flex-direction: column;
+  }
+}
 
 .page__path {
   text-transform: uppercase;
@@ -13706,6 +13711,12 @@ body {
   font-style: normal;
   font-family: Lato;
   color: #F16D7F;
+}
+@media (max-width: 376px) {
+  .page__path {
+    margin: 30px 0 40px 0;
+    text-align: center;
+  }
 }
 
 .arrow-prev {
@@ -13726,6 +13737,11 @@ body {
 .product__carusel {
   margin-bottom: -50px;
   border: 1px solid #EAEAEA;
+}
+@media (max-width: 768px) {
+  .product__carusel {
+    margin-bottom: 0;
+  }
 }
 .product-button {
   opacity: 1;
@@ -13756,6 +13772,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .product__info-container {
+    width: 72%;
+  }
+}
+@media (max-width: 376px) {
+  .product__info-container {
+    width: 86%;
+  }
+}
 .product__info-cat {
   text-align: center;
   text-transform: uppercase;
@@ -13766,6 +13792,11 @@ body {
   font-family: Lato;
   color: #F16D7F;
   margin: 0 0 10px 0;
+}
+@media (max-width: 768px) {
+  .product__info {
+    width: 100%;
+  }
 }
 .product__hr-rose {
   border: 2px solid #F16D7F;
@@ -13811,7 +13842,7 @@ body {
   margin: 0 0 40px;
 }
 .product__options {
-  width: 373px;
+  width: 67%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto 40px;
@@ -13840,6 +13871,25 @@ body {
 }
 .product__options-btn:hover {
   opacity: 0.5;
+}
+@media (max-width: 376px) {
+  .product__options-btn {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Lato;
+  }
+}
+@media (max-width: 768px) {
+  .product__options {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 376px) {
+  .product__options {
+    width: 81%;
+  }
 }
 .product__add-btn {
   border: 1px solid #F16D7F;
@@ -13882,4 +13932,34 @@ body {
 }
 .similar__card--last {
   margin: 0;
+}
+@media (max-width: 768px) {
+  .similar__card--last {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .similar__card {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .similar__card--first {
+    margin: 0 25px 0 0;
+  }
+}
+@media (max-width: 376px) {
+  .similar__card--first {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .similar {
+    width: 95%;
+  }
+}
+@media (max-width: 376px) {
+  .similar {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

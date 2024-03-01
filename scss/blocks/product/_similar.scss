@@ -9,6 +9,32 @@
 
         &--last {
             margin: 0;
+
+            @include tablet {
+                display: none;
+            }
         }
+
+        @include tablet {
+            margin: 0;
+        }
+
+        &--first {
+            @include tablet {
+                margin: 0 25px 0 0;
+            }
+
+            @include mobile {
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+
+    @include tablet {
+        width: 95%;
+    }
+
+    @include mobile {
+        flex-direction: column;
     }
 }

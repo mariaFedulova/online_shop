@@ -1,6 +1,10 @@
 .product-flex {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .page__path {
@@ -12,6 +16,11 @@
     &--rose {
         @include font(14px, 17px, 700);
         color: $pink_color;
+    }
+
+    @include mobile {
+        margin: 30px 0 40px 0;
+        text-align: center;
     }
 }
 
@@ -34,6 +43,10 @@
     &__carusel {
         margin-bottom: -50px;
         border: 1px solid $cart_border_color;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
 
     &-button {
@@ -53,6 +66,17 @@
         }
     }
 
+    // &__img {
+
+    //     @include tablet {
+    //         transform: translate(-27%, 0);
+    //     }
+
+    //     @include mobile {
+    //         transform: translate(-40%, 0);
+    //     }
+    // }
+
     &__info {
         width: 71%;
         min-height: 601px;
@@ -68,6 +92,14 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+
+            @include tablet {
+                width: 72%;
+            }
+
+            @include mobile {
+                width: 86%;
+            }
         }
 
         &-cat {
@@ -76,6 +108,10 @@
             @include font(14px, 17px, 400);
             color: $pink_color;
             margin: 0 0 10px 0;
+        }
+
+        @include tablet {
+            width: 100%;
         }
     }
 
@@ -116,7 +152,7 @@
     }
 
     &__options {
-        width: 373px;
+        width: 67%;
         display: flex;
         justify-content: space-between;
         margin: 0 auto 40px;
@@ -143,6 +179,18 @@
             &:hover {
                 opacity: 0.5;
             }
+
+            @include mobile {
+                @include font(10px, 12px, 400);
+            }
+        }
+
+        @include tablet {
+            margin-bottom: 70px;
+        }
+
+        @include mobile {
+            width: 81%;
         }
     }
 
