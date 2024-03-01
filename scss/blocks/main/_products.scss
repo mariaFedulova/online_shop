@@ -67,9 +67,11 @@
             border: 1px solid $white_color;
             box-sizing: border-box;
             padding: 14px 16px 12px 60px;
+            transition: transform 600ms;
 
             &:hover {
                 cursor: pointer;
+                transform: translate(-50%, -50%) scale(1.1);
             }
         }
 
@@ -134,10 +136,12 @@
         color: $pinr_button_text_color;
         padding: 15px 39px;
         margin: 0 0 95px;
+        transition: background-color 800ms, transform 600ms;
 
         &:hover {
             background-color: $pink_button_color;
             color: $white_color;
+            transform: scale(1.1);
         }
 
         @include tablet {

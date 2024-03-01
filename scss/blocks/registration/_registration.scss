@@ -19,6 +19,7 @@
             box-sizing: border-box;
             color: $placeholder_color;
             border: 1px solid $inputs_border;
+            transition: opacity 600ms;
 
             &:hover,
             &:focus {
@@ -45,6 +46,7 @@
         .registration__label {
             @include font(11px, 13px, 300);
             position: relative;
+            transition: opacity 600ms;
 
             &:before {
                 position: absolute;
@@ -79,12 +81,14 @@
             width: 157px;
             height: 50px;
             border: none;
-            background: $pink_color;
+            background-color: $pink_color;
             box-sizing: border-box;
+            transition: all 600ms;
 
             &:hover {
-                background: $hover_button_color;
+                background-color: $hover_button_color;
                 cursor: pointer;
+                transform: scale(1.1);
             }
         }
 

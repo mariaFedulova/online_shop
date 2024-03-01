@@ -45,6 +45,10 @@
             text-decoration: none;
         }
 
+        .copy-link-hover {
+            transition: background-color 600ms;
+        }
+
         .copy-link-hover:hover,
         .copy-link-hover:focus {
             background-color: $pink_color;
