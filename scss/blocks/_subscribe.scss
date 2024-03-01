@@ -71,6 +71,7 @@
             border: none;
             border-radius: 20px 0 0 20px;
             padding: 15px 64px 15px 22px;
+            transition: opacity 600ms;
 
             &:hover,
             &:focus {
@@ -88,6 +89,7 @@
             border: none;
             border-radius: 0 20px 20px 0;
             padding: 10px;
+            transition: background-color 600ms;
 
             &:hover,
             &:focus {

@@ -22,6 +22,7 @@
     background-image: none;
 
     &-svg {
+        transition: fill 300ms;
         margin: 10px 0 0 0;
         fill: $black_color;
     }
@@ -127,6 +128,7 @@
             text-transform: uppercase;
             @include font(14px, 17px, 400);
             color: $gray_card_text_color;
+            transition: opacity 300ms;
 
             &:before {
                 position: absolute;
@@ -149,8 +151,10 @@
         background: none;
         padding: 15px 20px;
         align-self: center;
+        transition: transform 600ms, background-color 600ms;
 
         &:hover {
+            transform: scale(1.1);
             background-color: $hover_button_color;
         }
 

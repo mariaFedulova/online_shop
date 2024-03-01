@@ -36,6 +36,7 @@
         padding: 13px 0 16px 17px;
         box-sizing: border-box;
         margin: 0 0 20px;
+        transition: opacity 300ms;
 
         &[placeholder] {
             -webkit-text-fill-color: $placeholder_color;
@@ -54,11 +55,13 @@
         border: 1px solid $inputs_border;
         padding: 12px 14px;
         @include font(11px, 13px, 300);
+        transition: opacity 300ms, transform 600ms;
 
         &:hover,
         &:focus {
             opacity: 0.5;
             cursor: pointer;
+            transform: scale(1.1);
         }
     }
 
@@ -113,9 +116,11 @@
         border: none;
         color: $white_color;
         text-transform: uppercase;
+        transition: transform 600ms, background-color 600ms;
 
         &:hover {
             cursor: pointer;
+            transform: scale(1.1);
             background-color: $hover_button_color;
         }
     }

@@ -73,6 +73,7 @@
                 border: 1px solid $cart_border_color;
                 padding: 1px 16px;
                 margin: 0 0 0 24px;
+                transition: opacity 300ms;
 
                 &:hover {
                     opacity: 0.5;
@@ -85,6 +86,7 @@
             position: absolute;
             top: 28px;
             right: 22px;
+            transition: opacity 300ms;
 
             &:hover {
                 opacity: 0.5;
@@ -126,10 +128,12 @@
         background: none;
         border: 1px solid $inputs_border;
         @include font(14px, 17px, 300);
+        transition: opacity 300ms, transform 600ms;
 
         &:hover {
             opacity: 0.5;
             cursor: pointer;
+            transform: scale(1.1);
         }
 
         &-link {

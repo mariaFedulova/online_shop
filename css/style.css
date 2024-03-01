@@ -12448,10 +12448,14 @@ body {
   margin: 0 34px 0 0;
   text-decoration: none;
 }
+.header__loupe {
+  transition: 600ms;
+}
 .header__button {
   background-color: transparent;
   border: none;
   margin: 0 34px 0 0;
+  transition: opacity 600ms;
 }
 @media (max-width: 376px) {
   .header__button {
@@ -12461,11 +12465,15 @@ body {
 .header__person-link {
   margin: 0 34px 0 0;
   text-decoration: none;
+  transition: opacity 600ms;
 }
 @media (max-width: 376px) {
   .header__person-link {
     display: none;
   }
+}
+.header__cart-link {
+  transition: opacity 600ms;
 }
 @media (max-width: 376px) {
   .header__cart-link {
@@ -12521,17 +12529,21 @@ body {
   font-style: normal;
   font-family: Lato;
 }
+.header .li {
+  transition: opacity 300ms;
+}
 .header .li:hover {
   opacity: 0.5;
 }
-.header .nav__close-button {
+.header .header__nav-close-button {
   position: absolute;
   top: 16px;
   right: 17px;
   border: none;
   background-color: #FBFBFB;
+  transition: opacity 600ms;
 }
-.header .nav__close-button:hover {
+.header .header__nav-close-button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
@@ -12814,9 +12826,11 @@ body {
   border: 1px solid #FBFBFB;
   box-sizing: border-box;
   padding: 14px 16px 12px 60px;
+  transition: transform 600ms;
 }
 .products__card .products__button:hover {
   cursor: pointer;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .products__card .products__button-span {
   font-family: Lato;
@@ -12883,10 +12897,12 @@ body {
   color: #F26376;
   padding: 15px 39px;
   margin: 0 0 95px;
+  transition: background-color 800ms, transform 600ms;
 }
 .products__link:hover {
   background-color: #FF6A6A;
   color: #FBFBFB;
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .products__link {
@@ -13054,6 +13070,7 @@ body {
   border: none;
   border-radius: 20px 0 0 20px;
   padding: 15px 64px 15px 22px;
+  transition: opacity 600ms;
 }
 .subscribe__wrapper .subscribe__input:hover, .subscribe__wrapper .subscribe__input:focus {
   opacity: 0.5;
@@ -13069,6 +13086,7 @@ body {
   border: none;
   border-radius: 0 20px 20px 0;
   padding: 10px;
+  transition: background-color 600ms;
 }
 .subscribe__wrapper .subscribe__button:hover, .subscribe__wrapper .subscribe__button:focus {
   background-color: #E05C6E;
@@ -13135,6 +13153,9 @@ body {
   margin: 0 7px 0 0;
   text-decoration: none;
 }
+.copy__links .copy-link-hover {
+  transition: background-color 600ms;
+}
 .copy__links .copy-link-hover:hover,
 .copy__links .copy-link-hover:focus {
   background-color: #F16D7F;
@@ -13188,6 +13209,7 @@ body {
   box-sizing: border-box;
   color: #B1B1B1;
   border: 1px solid #A4A4A4;
+  transition: opacity 600ms;
 }
 .registration__field .registration__input:hover, .registration__field .registration__input:focus {
   opacity: 0.5;
@@ -13211,6 +13233,7 @@ body {
   font-style: normal;
   font-family: Lato;
   position: relative;
+  transition: opacity 600ms;
 }
 .registration__field .registration__label:before {
   position: absolute;
@@ -13243,12 +13266,14 @@ body {
   width: 157px;
   height: 50px;
   border: none;
-  background: #F16D7F;
+  background-color: #F16D7F;
   box-sizing: border-box;
+  transition: all 600ms;
 }
 .registration__field .registration__button:hover {
-  background: #E05C6E;
+  background-color: #E05C6E;
   cursor: pointer;
+  transform: scale(1.1);
 }
 .registration__field .registration__span {
   font-family: Lato;
@@ -13441,6 +13466,7 @@ body {
   border: 1px solid #EAEAEA;
   padding: 1px 16px;
   margin: 0 0 0 24px;
+  transition: opacity 300ms;
 }
 .cart__item-value--border:hover {
   opacity: 0.5;
@@ -13450,6 +13476,7 @@ body {
   position: absolute;
   top: 28px;
   right: 22px;
+  transition: opacity 300ms;
 }
 .cart__item-del:hover {
   opacity: 0.5;
@@ -13495,10 +13522,12 @@ body {
   font-weight: 300;
   font-style: normal;
   font-family: Lato;
+  transition: opacity 300ms, transform 600ms;
 }
 .cart__button:hover {
   opacity: 0.5;
   cursor: pointer;
+  transform: scale(1.1);
 }
 .cart__button-link {
   text-decoration: none;
@@ -13561,6 +13590,7 @@ body {
   padding: 13px 0 16px 17px;
   box-sizing: border-box;
   margin: 0 0 20px;
+  transition: opacity 300ms;
 }
 .order__input[placeholder] {
   -webkit-text-fill-color: #B1B1B1;
@@ -13579,10 +13609,12 @@ body {
   font-weight: 300;
   font-style: normal;
   font-family: Lato;
+  transition: opacity 300ms, transform 600ms;
 }
 .order__quote-button:hover, .order__quote-button:focus {
   opacity: 0.5;
   cursor: pointer;
+  transform: scale(1.1);
 }
 .order__price {
   margin: 57px 0 0 0;
@@ -13639,9 +13671,11 @@ body {
   border: none;
   color: #FBFBFB;
   text-transform: uppercase;
+  transition: transform 600ms, background-color 600ms;
 }
 .order__check-button:hover {
   cursor: pointer;
+  transform: scale(1.1);
   background-color: #E05C6E;
 }
 @media (max-width: 768px) {
@@ -13681,6 +13715,7 @@ body {
   background-image: none;
 }
 .arrow-prev-svg {
+  transition: fill 300ms;
   margin: 10px 0 0 0;
   fill: #222;
 }
@@ -13792,6 +13827,7 @@ body {
   font-style: normal;
   font-family: Lato;
   color: #5D5D5D;
+  transition: opacity 300ms;
 }
 .product__options-btn:before {
   position: absolute;
@@ -13810,8 +13846,10 @@ body {
   background: none;
   padding: 15px 20px;
   align-self: center;
+  transition: transform 600ms, background-color 600ms;
 }
 .product__add-btn:hover {
+  transform: scale(1.1);
   background-color: #E05C6E;
 }
 .product__add-btn:hover .product__cart-img {
@@ -13836,6 +13874,7 @@ body {
 .similar {
   width: 72%;
   margin: 0 auto 100px;
+  flex-direction: row;
 }
 .similar__card {
   padding: 0;
