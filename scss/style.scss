@@ -1,7 +1,6 @@
 @import './reset';
 @import './variables';
 @import './mixins';
-@import './bootstrap';
 @import './general';
 @import './blocks/header';
 @import './blocks/main/intro';
@@ -16,3 +15,4 @@
 @import './blocks/cart/order';
 @import './blocks/product/product';
 @import './blocks/product/similar';
+@import './blocks/catalog/catalog';
